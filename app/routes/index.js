@@ -14,6 +14,10 @@ module.exports = function(app) {
 		res.render('tpl/login');
 	});
 
+	app.post('/login', function (req, res) {
+		
+	});
+
 	app.get('/getData', function (req, res) {
 		var Mock = require('mockjs');
 		var data = Mock.mock({

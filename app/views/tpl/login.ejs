@@ -32,14 +32,14 @@
             
             <div class="col-md-12">
                 
-                <form method="post" action="index.html">
+                <form method="post" action="login">
                     <h4 class="nomargin">用户登录</h4>
                     <p class="mt5 mb20"></p>
                 
-                    <input type="text" class="form-control uname" placeholder="用户名" />
-                    <input type="password" class="form-control pword" placeholder="密码" />
-                    <button class="btn btn-success btn-block">登录</button>
-                    
+                    <input id="userName" type="text" class="form-control uname" placeholder="用户名" />
+                    <input id="pwd" type="password" class="form-control pword" placeholder="密码" />
+                    <a id="btnSubmit" class="btn btn-success btn-block" href="javascript:;">登录</a>
+                    <p id="loginErr" class="login-err"></p>
                 </form>
             </div><!-- col-sm-5 -->
             
@@ -57,9 +57,14 @@
     </div><!-- signin -->
   
 </section>
-
-
-
-
+<script data-main="src/js/login.js" src="src/js/lib/require.js"></script>
+<script>
+requirejs.config({
+    baseUrl: 'src/js',
+    paths: {
+      "jquery": "lib/jquery-1.11.1.min"
+    }
+});
+</script>
 </body>
 </html>

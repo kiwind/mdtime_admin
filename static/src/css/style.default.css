@@ -3181,7 +3181,7 @@ div.error label.error:before {
 
 
 .signinpanel {
-    width: 600px;
+    width: 400px;
     margin: 10% auto 0 auto;
 }
 
@@ -3211,8 +3211,18 @@ div.error label.error:before {
     background: #fff url(../images/locked.png) no-repeat 95% center; 
 }
 
+
 .signinpanel .btn {
     margin-top: 15px;
+    color:#FFF;
+}
+
+.signinpanel .login-err{
+    height:20px;
+    line-height:20px;
+    margin:10px 0 0 0;
+    color:#F00;
+    font-size:12px;
 }
 
 .signinpanel form {
@@ -3224,7 +3234,7 @@ div.error label.error:before {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
 }
 
 .signinpanel form a {

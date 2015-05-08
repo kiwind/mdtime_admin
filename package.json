@@ -12,6 +12,7 @@
     "express-session": "1.9.1",
     "mongodb":"*",
     "connect-mongo": "0.4.1",
+    "connect-flash": "0.1.1",
     "ejs": "*",
     "gulp": "^3.8.10",
     "gulp-ruby-sass": "^0.7.1",
